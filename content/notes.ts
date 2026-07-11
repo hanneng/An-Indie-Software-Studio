@@ -10,9 +10,8 @@ export const notes: Note[] = [
     year: 2026,
     entries: [
       "Started building HanNeng.net.",
-      "Deployed the first version on Cloudflare Pages.",
-      "Began learning AWS Lambda for future backend services.",
-      "Continued developing What Should I Wear Today.",
+      "Launched on Cloudflare Pages.",
+      "Planning AWS Lambda integration.",
     ],
   },
 ];

@@ -12,7 +12,7 @@ export function Footer() {
           Building useful software, one project at a time.
         </p>
         <p className="mt-4 text-xs text-secondary-text/60">
-          Built with Next.js, Tailwind CSS, Cloudflare Pages, and curiosity.
+          Built with Next.js, Tailwind CSS and Cloudflare Pages.
         </p>
       </div>
     </footer>

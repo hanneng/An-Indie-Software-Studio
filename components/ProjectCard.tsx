@@ -14,9 +14,11 @@ const statusColors: Record<string, string> = {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="group rounded-2xl border border-card-border bg-card p-6 transition-all hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5">
+    <div className="group h-full rounded-2xl border border-card-border bg-card p-6 transition-all duration-300 hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5">
       <div className="flex items-start justify-between">
-        <div className="text-3xl">{project.icon}</div>
+        <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-background text-2xl">
+          {project.icon}
+        </div>
         <span
           className={`rounded-full border px-3 py-1 text-xs font-medium ${statusColors[project.status]}`}
         >
@@ -24,7 +26,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </span>
       </div>
 
-      <h3 className="mt-4 text-lg font-semibold text-foreground">
+      <h3
+        className="mt-4 text-lg font-semibold text-foreground"
+        style={{ fontFamily: "var(--font-display), sans-serif" }}
+      >
         {project.name}
       </h3>
       <p className="mt-2 text-sm leading-relaxed text-secondary-text">
@@ -48,10 +53,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-lg bg-accent/10 px-4 py-2 text-xs font-medium text-accent transition-colors hover:bg-accent/20"
+            className="inline-flex items-center gap-1.5 rounded-lg bg-accent/10 px-4 py-2 text-xs font-medium text-accent transition-all duration-200 hover:bg-accent/20"
           >
             <ExternalLink size={14} />
-            Visit Project
+            Visit
           </a>
         )}
         {project.github && (
@@ -59,7 +64,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-lg bg-background px-4 py-2 text-xs font-medium text-secondary-text transition-colors hover:text-foreground"
+            className="inline-flex items-center gap-1.5 rounded-lg bg-background px-4 py-2 text-xs font-medium text-secondary-text transition-colors duration-200 hover:text-foreground"
           >
             <GithubIcon size={14} />
             GitHub

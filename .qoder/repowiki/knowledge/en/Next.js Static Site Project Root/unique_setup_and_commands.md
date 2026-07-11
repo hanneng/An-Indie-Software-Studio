@@ -1,0 +1,1 @@
+Run `npm run dev` / `yarn dev` / `pnpm dev` / `bun dev` per README; production build is `npm run build` which emits static files to `out/` (per `next.config.ts` `output: 'export'`) instead of a server bundle.

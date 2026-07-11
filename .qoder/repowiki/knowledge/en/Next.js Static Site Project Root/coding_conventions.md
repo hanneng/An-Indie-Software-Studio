@@ -1,0 +1,2 @@
+- TypeScript paths use the `@/*` absolute alias mapped to the repository root, so all imports are written relative to the project root rather than via long relative paths.
+- ESLint rules are composed by spreading the Next.js `core-web-vitals` and `typescript` configs from `eslint-config-next` rather than writing custom rules.

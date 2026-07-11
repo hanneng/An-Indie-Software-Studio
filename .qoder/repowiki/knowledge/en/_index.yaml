@@ -1,0 +1,25 @@
+# 知识卡导出索引文件
+schema_version: 1
+locale: en-US
+branch: master
+nodes_managed: true
+exported_at: "2026-07-10T23:45:22Z"
+modules:
+    "":
+        dir_name: Next.js Static Site Project Root
+        title: Next.js Static Site Project Root
+        scope:
+            - .gitignore
+            - AGENTS.md
+            - CLAUDE.md
+            - README.md
+            - eslint.config.mjs
+            - next.config.ts
+            - package.json
+            - package-lock.json
+            - postcss.config.mjs
+            - tsconfig.json
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []

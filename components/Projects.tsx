@@ -1,5 +1,6 @@
 import { projects } from "@/content/projects";
 import { ProjectCard } from "./ProjectCard";
+import { FadeIn } from "./FadeIn";
 
 export function Projects() {
   const liveProjects = projects.filter((p) => p.category === "live");
@@ -8,35 +9,48 @@ export function Projects() {
   return (
     <section id="projects" className="px-6 py-20">
       <div className="mx-auto max-w-6xl">
-        <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Featured Projects
-          </h2>
-          <p className="mt-4 text-secondary-text">
-            Software products and experiments I&apos;m building
-          </p>
-        </div>
+        <FadeIn>
+          <div className="text-center">
+            <h2
+              className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl"
+              style={{ fontFamily: "var(--font-display), sans-serif" }}
+            >
+              Projects
+            </h2>
+            <p className="mt-4 text-secondary-text">
+              Software products and experiments I&apos;m building
+            </p>
+          </div>
+        </FadeIn>
 
-        {/* Live Projects */}
+        {/* Live Products */}
         <div className="mt-16">
-          <h3 className="mb-6 flex items-center gap-2 text-lg font-semibold text-foreground">
-            <span className="text-xl">🚀</span> Live
-          </h3>
+          <FadeIn>
+            <h3 className="mb-6 flex items-center gap-2 text-lg font-semibold text-foreground">
+              <span className="text-xl">🚀</span> Live Products
+            </h3>
+          </FadeIn>
           <div className="grid gap-6 sm:grid-cols-2">
-            {liveProjects.map((project) => (
-              <ProjectCard key={project.name} project={project} />
+            {liveProjects.map((project, i) => (
+              <FadeIn key={project.name} delay={i * 0.1}>
+                <ProjectCard project={project} />
+              </FadeIn>
             ))}
           </div>
         </div>
 
-        {/* Building Projects */}
+        {/* On the Workbench */}
         <div className="mt-12">
-          <h3 className="mb-6 flex items-center gap-2 text-lg font-semibold text-foreground">
-            <span className="text-xl">🛠</span> Building
-          </h3>
+          <FadeIn>
+            <h3 className="mb-6 flex items-center gap-2 text-lg font-semibold text-foreground">
+              <span className="text-xl">🛠</span> On the Workbench
+            </h3>
+          </FadeIn>
           <div className="grid gap-6 sm:grid-cols-2">
-            {buildingProjects.map((project) => (
-              <ProjectCard key={project.name} project={project} />
+            {buildingProjects.map((project, i) => (
+              <FadeIn key={project.name} delay={i * 0.1}>
+                <ProjectCard project={project} />
+              </FadeIn>
             ))}
           </div>
         </div>

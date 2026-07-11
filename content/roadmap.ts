@@ -8,25 +8,24 @@ export const roadmap = {
     title: "Now",
     items: [
       "Launch HanNeng.net",
-      "Complete What Should I Wear Today",
-      "Build CyberReady MVP",
+      "Improve Stylomylo",
+      "Publish more workshop notes",
     ],
   },
   next: {
     title: "Next",
     items: [
-      "Hotel Intelligence",
-      "AI Virtual Security Officer",
-      "Singapore Open Data Explorer",
+      "AI Virtual CISO",
+      "Tourism Data Intelligence",
+      "More AI utilities",
     ],
   },
   future: {
     title: "Future",
     items: [
       "Build more useful SaaS products",
-      "Publish technical articles",
-      "Continue experimenting with AI",
-      "Learn new cloud technologies",
+      "Experiment with AI",
+      "Continue learning",
     ],
   },
 };

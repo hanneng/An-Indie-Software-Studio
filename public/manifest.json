@@ -1,0 +1,16 @@
+{
+  "name": "Han Neng — An Indie Software Studio",
+  "short_name": "Han Neng",
+  "description": "Building useful software, one project at a time. An indie software studio focused on AI, cybersecurity, cloud technologies, and data.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0B0C",
+  "theme_color": "#3B82F6",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
