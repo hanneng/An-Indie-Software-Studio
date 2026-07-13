@@ -53,6 +53,16 @@ export const projects: Project[] = [
     category: "live",
   },
   {
+    name: "MagSafe Wallet",
+    description: "Find Your Perfect MagSafe Wallet.",
+    status: "Live",
+    tags: ["E-commerce", "Accessories", "Next.js"],
+    icon: "👛",
+    url: "https://www.magsafewallet.shop/",
+    github: "",
+    category: "live",
+  },
+  {
     name: "AI Virtual CISO",
     description: "An AI-powered virtual security advisor that helps organisations strengthen their cybersecurity posture.",
     status: "Building",

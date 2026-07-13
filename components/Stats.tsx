@@ -73,8 +73,8 @@ export function Stats() {
     <section className="px-6 py-20">
       <div className="mx-auto max-w-4xl">
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
-          <StatCard label="Products" value={6} delay={0} />
-          <StatCard label="Live" value={4} delay={0.1} />
+          <StatCard label="Products" value={7} delay={0} />
+          <StatCard label="Live" value={5} delay={0.1} />
           <StatCard label="Building" value={2} delay={0.2} />
           <StatCard label="Years Building" value="2026–" delay={0.3} />
         </div>
